@@ -1,0 +1,387 @@
+
+/************************MOBILE VIEW FIRST******************************/
+
+
+  
+
+.containerBox{
+	margin-top: 0vh;
+	width: 100vw;
+	background-color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.tableHeader{
+	color: #fff;
+	width: 100%;
+	height: 16vh;
+	background:linear-gradient(to right, rgb(9, 137, 223) 0%, rgb(134, 223, 221) 100%);
+	padding-top: 0vh;
+}
+
+.placeHeader{
+	color:#fff;
+	float: left;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	padding-left: 2vh;
+}
+
+.headLabel{
+	margin-top: auto;
+	text-align: left;
+	font-size: 3vh;
+	margin-bottom: 0.8vh;
+}
+
+.openCloseInfo{
+    font-size: 1.8vh;
+	text-align: left;
+	margin-bottom: auto;
+}
+
+.addressLabel{
+    font-size: 1.6vh;
+	text-align: left;
+	margin-bottom: auto;
+}
+
+.rightHeaderBlock{
+	float: right;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-right: 5vw;
+}
+
+.viewMap{
+	background-color: white;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.6vh;
+	color: #333333;
+	height: 4vh;
+	padding-right: 3vw;
+	padding-left: 3vw;
+	border-radius: 1vw;
+	box-shadow: 0vw 0vw 1.5vw 0vw #00000010;
+}
+
+.viewMap:Hover{
+	background-color: #333333;
+	color: white;
+	transition: 0.4s;
+}
+
+.categoryTime{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	color: #333333;
+}
+
+.opentime{
+	font-size: 2.6vh;
+}
+
+.closetime{
+	font-size: 2.6vh;
+}
+
+.timeBlock{
+	height: 100%;
+	width: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center
+}
+
+.timeBlockText{
+	font-size: 1.4vh;
+    font-weight: 600;
+    margin-bottom: 1vh;
+}
+
+.categoryDescription{
+	box-sizing: border-box;
+	width: 100%;
+	background-color: white;
+	color: #333333;
+	padding-left: 2vh;
+	padding-right: 2vh;
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+	border-bottom: 1.5px solid;
+	border-color: #EEE;
+}
+
+.descriptionLabel{
+	margin-top: auto;
+	font-size: 2.2vh;
+    font-weight: 600;
+	margin-bottom: 1vh;
+	text-align: left;
+
+}
+
+.descriptionText{
+	font-size: 2vh;
+	text-align: left;
+	padding-right:2vw;
+	margin-bottom: auto;
+    line-height: 2.8vh;
+}
+
+.categoryElement{
+	width: 100%;
+	height: 9vh;
+	background-color: white;
+	text-align: center;
+	color: #333333;
+	border-bottom: 0.2vh solid;
+	border-color: #EEE;
+}
+
+
+.labelLeft{
+	float: left;
+	height: 100%;
+	display:flex;
+	flex-direction: column;
+	align-items:left;
+	align-content:center;
+	justify-content: center;
+	padding-left: 2vh;
+	font-size:2.2vh;
+}
+
+.nameLabel{
+	margin-top: auto;
+	font-size: 2.2vh;
+	margin-bottom: auto;
+	text-align: left;
+}
+
+.secondaryLabel{
+	font-size: 1.6vh;
+	text-align: left;
+	margin-bottom: auto;
+}
+
+.rightBlock{
+	float: right;
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+	padding-right: 2vw;
+}
+
+.firstBlock{
+	float: left;
+	height: 100%;
+	width: 8vh;
+	display: flex;
+	flex-direction: column;
+	color: #666666;
+}
+
+.firstBlockLabel{
+	margin-top: auto;
+	font-size: 3.5vh;
+	font-family: 'Oswald', sans-serif;
+}
+
+.firstBlockLowerLabel{
+	font-size: 1.4vh;
+	margin-bottom: auto;
+}
+
+.borderline{
+	height: 80%;
+	width: 0.2vh;
+	border-left: 0.2vh solid;
+	border-color: #EEE;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.secondBlock{
+	float: right;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	width: 8vh;
+}
+
+.icon{
+	margin-top: auto;
+	height: 3.6vh;
+	margin-bottom: auto;
+}
+
+.iconLabel{
+	font-size: 1.4vh;
+	margin-top: 0vh;
+	margin-bottom: auto;
+
+}
+
+.categoryHourwise{
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding-right: 3vh;
+}
+
+.categoryDirection{
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding-right: 3vh;
+}
+
+.goButton{
+	background-color: rgb(0, 110, 201);
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.8vh;
+	color: #FFFFFF;
+	height: 4vh;
+	padding-right: 5vw;
+	padding-left: 5vw;
+	border-radius: 4px;
+	box-shadow: 0.2vw 0.2vw 0.4vw 0.2vw #00000020;
+
+}
+
+.goButton:Hover{
+	background-color: #333333;
+	color: white;
+	transition: 0.4s;
+}
+
+/************************DESKTOP VIEW*****************************/
+@media only screen and (orientation: landscape) {
+
+	.containerBox{
+		margin-top: 6vh;
+		width: 74vw;
+		height: 76vh;
+		border-radius: 0.5vw;
+		box-shadow: 0vw 0vw 1.5vw 0vw #00000036;
+		margin-left: auto;
+		margin-right: auto;
+		overflow-y: scroll;
+	}
+
+	.tableHeader{
+		border-top-left-radius: 0.5vw;	
+	}
+
+	.placeHeader{
+		padding-left: 5vh;
+	}
+
+	.headLabel{
+		font-size: 3.6vh;
+	}
+
+	.addressLabel{
+		font-size: 2vh;
+	}
+
+	.viewMap{
+		height: 5vh;
+		font-size: 2vh;
+		border-radius: 2.5vh;
+	}
+
+	.timeBlock{
+		font-size: 2vw;
+	}
+
+	.opentime{
+		font-size: 3.2vh;
+	}
+	
+	.closetime{
+		font-size: 3.2vh;
+	}
+
+	.categoryDescription{
+		padding-left: 5vh;
+	}
+
+	.descriptionLabel{
+		font-size: 3vh;
+	}
+
+	.descriptionText{
+		font-size: 2.2vh;
+	}
+
+	.categoryElement{
+		height: 12vh;
+		font-size: 3vw;
+	}
+
+	.icon{
+		height: 4.8vh;
+	}
+
+	.iconLabel{
+		font-size: 2vh;
+	}
+
+	.firstBlockLabel{
+		font-size: 4.5vh;
+	}
+
+	.firstBlockLowerLabel{
+		font-size: 2vh;
+	}
+
+	.secondBlock{
+		width: 12vh;
+		padding-left: 1vw;
+		padding-right: 1vw;
+	}
+
+	.firstBlock{
+		width: 12vh;
+		padding-left: 1vw;
+		padding-right: 1vw;
+	}
+
+	.labelLeft{
+		padding-left: 5vh;
+	}
+
+	.nameLabel{
+		font-size: 3vh;
+	}
+
+	.goButton{
+		padding-left: 4vh;
+		padding-right: 4vh;
+		font-size: 2vh;
+		height: 5vh;
+		border-radius: 4px;
+	}
+
+	.categoryDirection{
+		padding-right: 3vw;
+	}
+
+	.categoryHourwise{
+		padding-right: 3vw;
+	}
+}

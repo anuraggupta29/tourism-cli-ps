@@ -1,0 +1,301 @@
+
+/************************MOBILE VIEW FIRST******************************/
+
+.containerBox{
+	margin-top: 1vh;
+	width: 100vw;
+	background-color: #fff;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.tableHeader{
+	width: 100%;
+	height: 8vh;
+	border-bottom: 1.5px solid;
+	border-color: #EEE;
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+}
+
+.placeHeader{
+	height: 100%;
+	float: left;
+	display: table;
+	padding-left: 2vh;
+	font-size: 2vh;
+}
+
+.placeHeader p{
+	display: table-cell;
+	vertical-align: middle;
+	color: #333333;
+}
+
+.rightHeaderBlock{
+	float: right;
+	display: flex;
+	flex-direction: row;
+	padding-right: 4vw;
+	height: 100%;
+}
+
+.rightHeaderBlock p{
+	margin-top: auto;
+	margin-bottom: auto;
+	font-size: 1.8vh;
+	color: #333333;
+}
+
+select{
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.8vh;
+	color: #333333;
+	width: 18vh;
+	height: 4vh;
+	border: solid #ddd;
+	border-width: 0.1vh;
+	border-radius: 0.5vh;
+	padding: 0vh 0vh 0vh 1vh;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 1vh;
+    background: url('../../static/img/caretdown.png') no-repeat right #FFF;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    background-position: calc(100% - 1vh);
+	background-size: 1.6vh 0.9vh;
+}
+
+.pageBox{
+    width: 100%;
+    height: 100%;
+}
+
+.categoryElement{
+	width: 100%;
+	height: 10vh;
+	background-color: white;
+	text-align: center;
+	color: #333333;
+	font-size: 3vw;
+	border-bottom: 0.2vh solid;
+	border-color: #EEE;
+}
+
+.categoryElement:Hover{
+	background-color: #F8F8F8;
+}
+
+
+.labelsLeft{
+	float: left;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	padding-left: 2vh;
+}
+
+.nameLabel{
+	margin-top: auto;
+	font-size: 2.2vh;
+	margin-bottom: 1vh;
+	text-align: left;
+}
+
+.secondaryLabel{
+	font-size: 1.6vh;
+	text-align: left;
+	margin-bottom: auto;
+}
+
+.rightBlock{
+	float: right;
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+	padding-right: 2vw;
+}
+
+.distanceBlock{
+	float: left;
+	height: 100%;
+	width: 8vh;
+	display: flex;
+	flex-direction: column;
+	color: #666666;
+}
+
+.distanceLabel{
+	margin-top: auto;
+	font-size: 3.5vh;
+	font-family: 'Oswald', sans-serif;
+}
+
+.distanceLowerLabel{
+	font-size: 1.4vh;
+	margin-bottom: auto;
+}
+
+.borderline{
+	height: 80%;
+	width: 0.2vh;
+	border-left: 0.2vh solid;
+	border-color: #EEE;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+.congestionBlock{
+	float: right;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 8vh;
+}
+
+.congestionIcon{
+	margin-top: auto;
+	margin-bottom: 0.8vh;
+	height: 3.6vh;
+}
+
+.congestionLabel{
+	font-size: 1.4vh;
+	margin-top: 0vh;
+	margin-bottom: auto;
+
+}
+
+.pagination{
+    box-sizing: border-box;
+    width: 30%;
+    height: 12vh;
+    margin: 0 auto 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button {
+    width: 3.6vh;
+    height: 3.6vh;
+    background-color: #888888;
+    border-radius: 0.4vh;
+    color: #ffffff;
+    font-size: 1.8vh;
+}
+
+button:disabled{
+    background-color: #dddddd;
+}
+
+
+
+/************************DESKTOP VIEW******************************/
+@media only screen and (orientation: landscape) {
+
+	.containerBox{
+		margin-top: 6vh;
+		width: 74vw;
+		height: 64vh;
+		overflow-y: scroll;
+		border-radius: 0.5vw;
+		box-shadow: 0vw 0vw 1.5vw 0vw #00000010;
+	}
+
+    .pagination{
+        box-sizing: border-box;
+        width: 10vw;
+        height: 12vh;
+        margin: 0 auto 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .pageNo{
+        font-size: 3vh;
+    }
+	
+	.categoryElement{
+		height: 12vh;
+		font-size: 3vw;
+	}
+
+	
+
+	.labelsLeft{
+		padding-left: 5vh;
+	}
+	
+	.nameLabel{
+		font-size: 3vh;
+	}
+	
+	.secondaryLabel{
+		font-size: 2vh;
+	}
+
+	.congestionBlock{
+		width: 12vh;
+		padding-left: 1vw;
+		padding-right: 1vw;
+	}
+	
+	.congestionIcon{
+		height: 4.8vh;
+	}
+	
+	.congestionLabel{
+		font-size: 2vh;
+	}
+	
+	.distanceBlock{
+		width: 12vh;
+		padding-left: 1vw;
+		padding-right: 1vw;
+	}
+	
+	.distanceLabel{
+		font-size: 4.5vh;
+	}
+	
+	.distanceLowerLabel{
+		font-size: 2vh;
+		margin-bottom: auto;
+	}
+
+	.tableHeader{
+		height: 8vh;
+	}
+	
+	.placeHeader{
+		padding-left: 5vh;
+		font-size: 2.4vh;
+	}
+	
+	.rightHeaderBlock{
+		padding-right: 2vw;
+	}
+
+	.rightHeaderBlock p{
+		margin-top: auto;
+		margin-bottom: auto;
+		font-size: 2vh;
+	}
+	
+	select{
+		font-size: 2vh;
+		width: 20vh;
+		height: 4vh;
+		border-width: 0.2vh;
+		border-radius: 0.5vh;
+		padding: 0vh 0vh 0vh 1.6vh;
+		background-position: calc(100% - 1.6vh);
+		background-size: 1.6vh 0.9vh;
+	}
+}

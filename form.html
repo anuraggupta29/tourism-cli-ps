@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="static/css/nav.css">
+    <link rel="stylesheet" type="text/css" href="static/css/form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <title>Select Location - TripMate</title>
+    <link rel="icon" href="static/img/tripmate-logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="navBar">
+        <div class="logoBlock">
+            <img class="logoIcon" src="static/img/tripmate-logo.png">
+            <div class="tripmateName">TripMate</div>
+        </div>
+        <div class="sidenav">
+            <div class="closebtn"><a href="javascript:void(0)" onclick="closeNav()">&#10005;</a></div>
+            <a href="form.html" class="dropDownElement">Location Menu</a>
+            <a href="about.html" class="dropDownElement">About TripMate</a>
+            <a href="howItWorks.pdf" class="dropDownElement">How It Works</a>
+        </div>
+        <div class="navSlideMenu" onclick="openNav()">
+            &#9776;
+        </div>
+    </div>
+
+    <form action='publicPlaceList.html' method='post' class="citySelection">
+        <p class="infoLabel">Kindly select the city you will be / are visiting. The successive pages will show the
+            tourist attractions in the selected city. You can also see the congestion details, directions or book
+            tickets using TripMate.</p>
+
+        <p>Select Language</p>
+        <select class="selectMenu" name="language">
+            <option value="English">English</option>
+            <option value="Hindi">Hindi</option>
+        </select>
+
+        <p>Select Country</p>
+        <select class="selectMenu"  name="country">
+            <option value="India">India</option>
+        </select>
+
+        <p>Select State</p>
+        <select class="selectMenu" name="state">
+            <option value="Karnataka">Karnataka</option>
+        </select>
+
+        <p>Select City</p>
+        <select class="selectMenu" name="city">
+            <option value="Patna">Banglore</option>
+            <option value="Patna">Mangalore</option>
+            <option value="Patna">Mysuru</option>
+        </select>
+
+        <input class='nextBtn' type="submit" value="Next">
+    </form>
+
+    <script type="text/javascript" src="static/js/nav.js"></script>
+    <script type="text/javascript" src="static/js/form.js"></script>
+</body>
+
+</html>

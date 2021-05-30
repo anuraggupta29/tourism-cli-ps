@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="static/css/nav.css">
+    <link rel="stylesheet" type="text/css" href="static/css/detailsPage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <title>Location Details - TripMate</title>
+    <link rel="icon" href="static/img/tripmate-logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="navBar">
+        <div class="logoBlock">
+            <img class="logoIcon" src="static/img/tripmate-logo.png">
+            <p class="tripmateName">TripMate</p>
+        </div>
+        <div class="sidenav">
+            <div class="closebtn"><a href="javascript:void(0)" onclick="closeNav()">&#10005;</a></div>
+            <a href="form.html" class="dropDownElement">Location Menu</a>
+            <a href="about.html" class="dropDownElement">About TripMate</a>
+            <a href="howItWorks.pdf" class="dropDownElement">How It Works</a>
+        </div>
+        <div class="navSlideMenu" onclick="openNav()">
+            <p>&#9776;</p>
+        </div>
+    </div>
+
+    <div class="flex-container containerBox">
+
+        <div class="tableHeader">
+            <div class="placeHeader">
+                <p class="headLabel">
+                    <!-- Location name -->
+                </p>
+                <p class="addressLabel">
+                    <!-- Location address -->
+                </p>
+                </p>
+                <p class="openCloseInfo"><b>
+                        <!-- open/closed --></b></p>
+            </div>
+            <div class="rightHeaderBlock">
+                <button class="viewMap">VIEW IN MAP</button>
+            </div>
+        </div>
+
+        <div class="categoryElement categoryTime">
+            <div class="timeBlock">
+                <p class="timeBlockText">OPENING TIME</p>
+                <p class="opentime">
+                    <!-- opening time -->
+                </p>
+            </div>
+            <div class="borderline"></div>
+            <div class="timeBlock">
+                <p class="timeBlockText">CLOSING TIME</p>
+                <p class="closetime">
+                    <!-- closing time -->
+                </p>
+            </div>
+
+        </div>
+
+        <div class="categoryDescription">
+            <p class="descriptionLabel">Description</p>
+            <p class="descriptionText"></p>
+        </div>
+
+        <div class="categoryElement ">
+            <div class="labelLeft">
+                <p class="nameLabel">Congestion Level</p>
+            </div>
+            <div class="rightBlock">
+                <div class="borderline"></div>
+                <div class="secondBlock">
+                    <img class="icon congestionIcon" src="">
+                    <p class="iconLabel congestionLabel">
+                        <!-- congestion level -->
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="categoryElement">
+            <div class="labelLeft">
+                <p class="nameLabel">Rating</p>
+            </div>
+            <div class="rightBlock">
+                <div class="firstBlock">
+                    <p class="firstBlockLabel starRating">
+                        <!-- location rating -->
+                    </p>
+                    <p class="firstBlockLowerLabel">star</p>
+                </div>
+                <div class="borderline"></div>
+                <div class="secondBlock">
+                    <img class="icon" src="static/img/star.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="categoryElement">
+            <div class="labelLeft">
+                <p class="nameLabel">Distance</p>
+            </div>
+            <div class="rightBlock">
+                <div class="firstBlock">
+                    <p class="firstBlockLabel distanceLabel">
+                        <!-- distance -->
+                    </p>
+                    <p class="firstBlockLowerLabel">km away</p>
+                </div>
+                <div class="borderline"></div>
+                <div class="secondBlock">
+                    <img class="icon" src="static/img/location.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="categoryElement">
+            <div class="labelLeft">
+                <p class="nameLabel">Accessibility</p>
+            </div>
+            <div class="rightBlock">
+                <div class="firstBlock">
+                    <p class="firstBlockLabel safetyscore">
+                        <!-- safety -->
+                    </p>
+                    <p class="firstBlockLowerLabel">out of 5</p>
+                </div>
+                <div class="borderline"></div>
+                <div class="secondBlock">
+                    <img class="icon safetyIcon" src="">
+                </div>
+            </div>
+        </div>
+
+        <div class="categoryElement categoryDirection">
+            <div class="labelLeft">
+                <p class="nameLabel">Get directions to location</p>
+            </div>
+
+            <button class="goButton">Go</button>
+
+        </div>
+
+        <div class="categoryElement categoryHourwise">
+            <div class="labelLeft">
+                <p class="nameLabel">View congestion details</p>
+            </div>
+
+            <button class="goButton">Go</button>
+
+        </div>
+
+        <div class="categoryElement categoryHourwise">
+            <div class="labelLeft">
+                <p class="nameLabel">Book Tickets</p>
+            </div>
+
+            <button class="goButton bookTicketBtn">Go</button>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="static/js/nav.js"></script>
+    <script type="text/javascript" src="static/js/detailsPage.js"></script>
+</body>
+
+</html>

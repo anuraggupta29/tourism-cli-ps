@@ -1,0 +1,171 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+html{
+	height:100%;
+	background:white;
+	box-sizing: border-box;
+	background-attachment: fixed;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+a:focus {
+    outline: none;
+}
+
+/**********ALL NAVBAR CSS**************************************/
+
+.navBar{
+	height: 12vh;
+	background-color: rgba(255,255,255,0);
+	box-shadow: 0vw 0vw 2vw 0vw #00000030;
+	width: 100vw;
+	z-index: 1;
+	box-sizing: border-box;
+}
+
+
+.logoBlock{
+	float: left;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 100%;
+	padding-left: 2vh;
+}
+
+.logoIcon{
+	height: 6vh;
+}
+
+.tripmateName{
+	padding-left: 1vh;
+	font-family: 'Oswald', sans-serif;
+	font-size: 3.2vh;
+	color: #666666;
+}
+
+.navSlideMenu{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-right: 2vh;
+	height: 100%;
+	font-size: 4vh;
+	float:right;
+	color: #333333;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	background-color: #FFFFFFEE;
+	overflow-x: hidden;
+	transition: 0.5s;
+	border-left: solid;
+	border-width: 1px;
+	border-color: #DDDDDD;
+  }
+  
+.dropDownElement {
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+	padding-left: 4vh;
+	text-decoration: none;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 400;
+	font-size: 2.4vh;
+	color: #333333;
+	display: block;
+  }
+  
+.dropDownElement:hover {
+	background-color: #f8f8f8;
+	border: solid;
+	border-width: 1px;
+	border-color: #DDDDDD;
+  }
+  
+.closebtn {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	width: 100%;
+	padding-right: 2vh;
+	height: 12vh;
+  }
+
+  .closebtn a{
+	font-size: 4vh;
+	float:right;
+	color: #333333;
+	text-decoration: none;
+
+  }
+
+@media only screen and (orientation: landscape) {
+
+	.navBar{
+		box-shadow: 0vw 0vw 2vw 0vw #00000010;
+	}
+
+	.logoBlock{
+		padding-left: 4vh;
+	}
+
+	
+	.navSlideMenu{
+
+		padding-right: 4vh;
+
+	}
+
+	.sideNav{
+		width: 0;
+	}
+
+	.closebtn{
+		padding-right: 4vh;
+	}
+}
+
+/************************SCROLL BAR******************************/
+.containerBox::-webkit-scrollbar {
+	width: 10px;
+}
+
+.containerBox::-webkit-scrollbar-track {
+	background: rgba(0, 0, 0, 0.00);
+}
+
+.containerBox::-webkit-scrollbar-thumb {
+	background: #EEEEEE;
+	border-radius: 5px;
+}
+
+.containerBox::-webkit-scrollbar-thumb:hover {
+	background: #505050;
+}
+
+.containerBox::-webkit-scrollbar-corner {
+	background: rgba(0, 0, 0, 0.00);
+}

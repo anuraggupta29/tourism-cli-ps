@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="static/css/nav.css">
+    <link rel="stylesheet" type="text/css" href="static/css/bookTicket.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <title>Book Tickets - TripMate</title>
+    <link rel="icon" href="static/img/tripmate-logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="navBar">
+        <div class="logoBlock">
+            <img class="logoIcon" src="static/img/tripmate-logo.png">
+            <div class="tripmateName">TripMate</div>
+        </div>
+        <div class="sidenav">
+            <div class="closebtn"><a href="javascript:void(0)" onclick="closeNav()">&#10005;</a></div>
+            <a href="form.html" class="dropDownElement">Location Menu</a>
+            <a href="about.html" class="dropDownElement">About TripMate</a>
+            <a href="howItWorks.pdf" class="dropDownElement">How It Works</a>
+        </div>
+        <div class="navSlideMenu" onclick="openNav()">
+            &#9776;
+        </div>
+    </div>
+
+    <form action='detailsPage.html' method='post' onsubmit="return validateForm()" class="bookTicketForm">
+        <p class="pageTitle">E-Ticket Portal</p>
+        <p class="attractionName">Cubbon National Park, Bangalore</p>
+        <p class="infoLabel">Your tickets will be sent to your mail & mobile no. The tickets will be
+            verified at the entry gate and are valid for 3 days from the date of purchase.</p>
+
+        <p>Name</p>
+        <input class="requiredField" type="text" name="username" placeholder="Enter your Name">
+
+        <p>Mobile Number</p>
+        <input class="requiredField" type="text" name="mobileno" placeholder="Enter your Mobile Number">
+
+        <p>Email ID</p>
+        <input class="requiredField" type="text" name="email" placeholder="Enter your Email">
+
+        <p>Tickets to Purchase</p>
+        <select class="selectMenu" name="tickets">
+            <option value='1'>1</option>
+            <option value='2'>2</option>
+            <option value='3'>3</option>
+            <option value='4'>4</option>
+            <option value='5'>5</option>
+            <option value='6'>6</option>
+            <option value='7'>7</option>
+            <option value='8'>8</option>
+        </select>
+
+        <input class='payBtn' type="submit" value="Pay ₹100">
+    </form>
+
+    <script type="text/javascript" src="static/js/nav.js"></script>
+    <script type="text/javascript" src="static/js/bookTicket.js"></script>
+</body>
+
+</html>
