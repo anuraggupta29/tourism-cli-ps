@@ -1,2 +1,3 @@
-# tourism-cli-ps
-Learning to use git cli
+#tripMate
+
+Frontend of website to book tickets for tourist destinations.
